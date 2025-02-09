@@ -1,3 +1,4 @@
+import Dashboard from "./components/Dashboard";
 import './styles/App.css';
 import React, { useEffect, useState } from "react";
 
@@ -23,7 +24,9 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="App">
+      <Dashboard />
+      
       <h1>FuseTheViews Dashboard</h1>
       {error && <p>{error}</p>}
       {tiktokStats ? (
@@ -41,5 +44,3 @@ function App() {
 }
 
 export default App;
-
-
